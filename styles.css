@@ -1,0 +1,380 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body 
+{
+    font-family: 'Roboto';
+    font-size: 16px;
+
+    height: 140vh;
+    background-color: #907dfd;
+    color: #1f1f09;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.homes-form-header
+{
+    text-align: center;
+    background-color: rgb(171, 165, 250);
+    border: 5px solid #D6D9D6;
+    border-radius: 3px;
+
+    width: 80%;
+    margin: 40px 0;
+    padding: 50px;
+    margin-top: 400px;
+}
+
+.homes-form-header h2 
+{
+ font-size: 30px;
+ margin-bottom: 20px;
+ margin-top: -5px;
+}
+
+.homes-form-header h1 
+{
+ font-size: 30px;
+ margin-bottom: 20px;
+ margin-top: -55px;
+}
+
+.homes-form 
+{
+    background-color: rgb(171, 165, 250);
+    border: 5px solid #d6d9dc;
+    border-radius: 3px;
+
+    width: 80%;
+    padding: 50px;
+    margin: 0 0 300px 0;
+}
+
+.homes-form 
+{
+    position:relative;
+}
+
+.form-row
+{
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.form-row input[type='text'], 
+.form-row input[type='email'],
+.form-row input[type='number']
+{
+    background-color: #FFFFFF;
+    border: 2px solid #d6d9dc;
+    border-radius: 30px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+}
+
+.homes-form-row 
+{
+    border: none;
+    margin-bottom: 40px;
+}
+
+.homes-form-row legend 
+{
+    margin-bottom: 0px;
+}
+
+.homes-form-row .radio-label 
+{
+    font-size: 14px;
+    padding: 0 20px 0 10px;
+}
+
+.homes-form-row input[type="radio"] 
+{
+    margin-top: 20px;
+}
+
+.homes-form-row .radio-label, 
+.homes-form-row input[type="radio"] 
+{
+    float: center;
+}
+
+.form-row label 
+{
+    margin-bottom: 15px;
+}
+
+
+
+
+
+.type-payment,
+.dropdown
+{
+    width: 250px;
+    margin: 20px auto;
+    margin-inline: 130px;
+
+}
+
+.type-payment .select-payment,
+.dropdown .dropdown-tonggle
+{
+    display: flex;
+    height: 1px;
+    background: #ffffff;
+    padding: 19px;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 6px;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.select-payment i,
+.dropdown-tonggle i
+{
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.type-payment.active .select-payment i,
+.dropdown.active .dropdown-tonggle i
+{
+    transform: rotate(-180deg);
+}
+
+.type-payment .mops,
+.dropdown .menus
+{
+    position: absolute;
+    padding: 11px;
+    margin-top: 5px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 0 3px rgba(0,0,0,0.1);
+    display: none;
+}
+
+.type-payment.active .mops,
+.dropdown.active .menus
+{
+    display: block;
+}
+
+.mops .mop,
+.menus .menu
+{
+    display: flex;
+    height: 55px;
+    cursor: pointer;
+    padding: 0 16px;
+    border-radius: 8px;
+    align-items: center;
+    background: #fff;
+}
+
+.mops .mop:hover,
+.menus .menu:hover
+{
+    background: #F2F2F2;
+}
+
+.menus .menu:hover ul
+{
+    display: block;
+    background: #F2F2F2;
+}
+
+.mop i,
+.menu i
+{
+    font-size: 25px;
+    margin-right: 12px;
+}
+
+.mop .mop-text
+{
+    margin: 22px;
+    font-size: 16px;
+    color: #333;
+}
+
+.menu .menu-text
+{
+    margin: 27px;
+    font-size: 16px;
+    color: #333;
+}
+
+.submenu 
+{
+    display: none;
+    position: absolute;
+    background: #fff;
+    border-radius: 8px;
+    width: 250px;
+    margin: 2px auto;
+    margin-inline: 130px;
+    margin-left: 215px;
+}
+
+.submenu-item
+{
+    display: flex;
+    height: 55px;
+    cursor: pointer;
+    padding: 0 16px;
+    border-radius: 8px;
+    align-items: center;
+    background: #fff;
+    top: 0;
+    left: 20px;
+}
+
+.submenu-item:hover >  ul
+{
+    background: #F2F2F2;
+}
+
+.submenu-item ul 
+{
+    top: 0;
+    left: 200px;
+}
+
+.form-row textarea
+{
+    font-family: 'Roboto';
+    font-size: 14px;
+
+    border: 1px solid #D6D9DC;
+    border-radius: 10px;
+
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding: 45px;
+    resize: none;
+}
+
+.form-row .instructions
+{
+    color: #040107;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.btn, .cancel
+{
+    padding: 5px 8%;
+    margin-left: 60px;
+    background: #896ae0;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 30px;
+}
+
+.popup button
+{
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px 0;
+    background: #865ee4;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+}
+
+@media only screen and (min-width: 700px)
+{
+    .homes-form-header,
+    .homes-form 
+    {
+        width: 600px;
+    }
+
+    .form-row
+    {
+        flex-direction: row;
+        align-items: flex-start; 
+        margin-bottom: 20px;
+        height: initial;
+    }
+
+    .form-row input[type='text'],
+    .form-row input[type='email'],
+    .for-row textarea
+    {
+        width: 270px;
+        height: initial;
+    }
+
+    .form-row input[type='number']
+    {
+        width: 100px;
+        height: initial;
+    }
+
+    .form-row label
+    {
+        text-align: right;
+        width: 120px;
+        margin-top: 7px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .homes-form-row 
+    {
+        margin-bottom: 10px;
+    }
+
+    .homes-form-row legend 
+    {
+        width: 120px;
+        text-align: right;
+        margin-top: 18px;
+        padding-right: 19px;
+    }
+
+    .homes-form-row legend 
+    {
+        float: left;
+    }
+
+    .form-row .instructions
+    {
+        margin-left: 180px;
+    }
+
+    .for-row input[type='text']:invalid,
+    .form-row input[type='email']:invalid,
+    .form-row input[type='number']:invalid
+    {
+        border: 1px solid #D55C5F;
+        color: #D55C5F;
+        box-shadow: none;
+    }
+}
